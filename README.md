@@ -20,3 +20,6 @@ quantitatively reason with them.
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+## Answer
+Looking at the slides about quick sort we can see that it is implied that $\frac{1}{2}$ of the array are considered good pivots and the first and last $\frac{1}{4}$ are considered bad pivots. We can use this to calculate our probability of getting a good pivot. We can do this by checking all of the groups of three that we might select from our array and putting them into 3 categories, those categories being a bad pivot on the lower part denoted as $L$, a bad pivot on the upper part denoted as $U$, and finally a good or two good pivots in the middle denoted as $M$. From before we can see that the probability of $L$ is $\frac{1}{4}$, $U$ is $\frac{1}{4}$, and $M$ is $\frac{1}{2}$. We can then add these all up to get $\frac{11}{16}$ or $68.75$% chance of selecting a good pivot.
