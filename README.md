@@ -24,10 +24,10 @@ might help with the notation for mathematical expressions.
 ## Answer
 Looking at the slides about quick sort we can see that it is implied that $\frac{1}{2}$ of the array are considered good pivots and the first and last $\frac{1}{4}$ are considered bad pivots. We can use this to calculate our probability of getting a good pivot. We can do this by checking all of the groups of three that we might select from our array and putting them into 3 categories, those categories being a bad pivot on the lower part denoted as $L$, a bad pivot on the upper part denoted as $U$, and finally a good or two good pivots in the middle denoted as $M$. From this we can get the probabilities of each of the parts:
 
-M has bad pivot for the first $\frac{1}{4}$ a good pivot in the second $\frac{1}{4}$, a good pivot in the third $\frac{1}{4}$, and a bad pivot in the fourth quarter $\frac{1}{4}$. This gets a total of $\frac{1}{4}$ + $\frac{1}{4}$ or $\frac{1}{2}$ for the good pivots of M.
+$M$ has bad pivot for the first $\frac{1}{4}$. It has a good pivot in the second $\frac{1}{4}$ so we have a running total of $\frac{1}{4}$ good pivots. It also has a good pivot in the third $\frac{1}{4}$ and now we can add to our running total to get us a running total of $\frac{1}{2}$. Finally it has a bad pivot in the fourth quarter $\frac{1}{4}$. So in the end the probability of $M$ having a good pivot is $\frac{1}{2}$.
 
-L has bad pivot for the first $\frac{1}{4}$ a good pivot in the second $\frac{1}{4}$. This gets a total of $\frac{1}{4}$ for the good pivots of L.
+$L$ has bad pivot for the first $\frac{1}{4}$ a good pivot in the second $\frac{1}{4}$. This gets a total of $\frac{1}{4}$ for the good pivots of $L$.
 
-L has bad pivot for the fourth $\frac{1}{4}$ a good pivot in the third $\frac{1}{4}$. This gets a total of $\frac{1}{4}$ for the good pivots of U.
+$U$ has bad pivot for the fourth $\frac{1}{4}$ a good pivot in the third $\frac{1}{4}$. This gets a total of $\frac{1}{4}$ for the good pivots of $U$.
 
 From before we can see that the probability of $L$ is $\frac{1}{4}$, $U$ is $\frac{1}{4}$, and $M$ is $\frac{1}{2}$. We can then add these all $\frac{1}{2}$ + $\frac{1}{4}$ + $\frac{1}{4}$ to get $\frac{11}{16}$ or $68.75$% chance of selecting a good pivot.
