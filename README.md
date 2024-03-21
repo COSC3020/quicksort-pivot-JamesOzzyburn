@@ -30,4 +30,4 @@ $L$ has bad pivot for the first $\frac{1}{4}$ a good pivot in the second $\frac{
 
 $U$ has bad pivot for the fourth $\frac{1}{4}$ a good pivot in the third $\frac{1}{4}$. This gets a total of $\frac{1}{4}$ for the good pivots of $U$.
 
-From before we can see that the probability of $L$ is $\frac{1}{4}$, $U$ is $\frac{1}{4}$, and $M$ is $\frac{1}{2}$. We can then add these all $\frac{1}{2}$ + $\frac{1}{4}$ + $\frac{1}{4}$ to get $\frac{11}{16}$ or $68.75$% chance of selecting a good pivot.
+Using the median of three method we get four seperate parts. The first part is PPP which gets us $\frac{8}{64}$. The second part is LPG which gets us $\frac{12}{64}$. The third part is PPL which gets us $\frac{12}{64}$. The first part is PPG which gets us $\frac{12}{64}$. When we add them all up we get $\frac{44}{64}$ or $68.75$% chance of selecting a good pivot.
